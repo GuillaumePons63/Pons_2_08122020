@@ -9,3 +9,22 @@
 
 body
 {font-family:ralewaythin,serif;}
+
+header
+
+{display: flex;
+justify-content: space-between;
+padding-top:45px;
+padding-bottom: 45px;}
+
+nav
+{width:33%;
+}
+
+header ul
+
+{display:flex;
+list-style-type: none;
+justify-content: space-between;
+}
+
