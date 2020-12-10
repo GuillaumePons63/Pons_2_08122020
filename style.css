@@ -7,6 +7,18 @@
 
 }
 
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  src: url("/font/fontAwesome/fa-solid-900.eot");
+  src: url("/font/fontAwesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), 
+       url("/font/fontAwesome/webfonts/fa-solid-900.woff2") format("woff2"), 
+       url("/font/fontAwesome/webfonts/fa-solid-900.woff") format("woff"), 
+       url("/font/fontAwesome/webfonts/fa-solid-900.ttf") format("truetype"), 
+       url("/font/fontAwesome/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+
 body
 {font-family:ralewaythin,serif;
 padding:0;
@@ -53,5 +65,55 @@ header a:hover
 border-top: 2px solid #0065FC;
 padding-top:45px;
 padding-bottom: 45px; 
+}
+
+/* Pour les checkbox de la section search */
+
+input[type=checkbox]{
+    height:0;
+    width:0;
+    visibility: hidden;
+}
+
+label {
+border:1px solid #d9d9d9;
+border-radius:25px;
+position:relative;
+display:inline-block;
+position: relative;
+text-align:right;
+padding: 15px 0 15px 50px;
+margin: auto;
+}
+
+
+
+label::before {
+    font-family: 'Font Awesome 5 Free';
+    content:'\f53a';
+    text-align:center;
+    display: block;
+    padding-top: 15px;
+    color:blue;
+    position: absolute;
+    top:0px;
+    left:0;
+   	width:50px;
+	height:100%;
+	background: #deebff;
+	border-radius: 50%;
+    box-sizing: border-box;
+	transition: 0.3s;
+              }
+
+input:checked + label {
+	background: #0065FC;
+    padding: 15px 50px 15px 0px;
+   
+}
+
+input:checked + label::before {
+	left: calc(100%);
+	transform: translateX(-100%);
 }
 
