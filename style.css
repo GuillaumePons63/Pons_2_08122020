@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'ralewaythin';
-    src: url('/font/raleway/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/font/raleway/raleway-variablefont_wght-webfont.woff') format('woff');
+    src: url('font/raleway/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -11,12 +11,12 @@
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  src: url("/font/fontAwesome/fa-solid-900.eot");
-  src: url("/font/fontAwesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), 
-       url("/font/fontAwesome/webfonts/fa-solid-900.woff2") format("woff2"), 
-       url("/font/fontAwesome/webfonts/fa-solid-900.woff") format("woff"), 
-       url("/font/fontAwesome/webfonts/fa-solid-900.ttf") format("truetype"), 
-       url("/font/fontAwesome/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url('font/fontAwesome/fa-solid-900.eot');
+  src: url('font/fontAwesome/fa-solid-900.eot?#iefix') format("embedded-opentype"), 
+       url('font/fontAwesome/fa-solid-900.woff2') format("woff2"), 
+       url('font/fontAwesome/fa-solid-900.woff') format("woff"), 
+       url('font/fontAwesome/fa-solid-900.ttf') format("truetype"), 
+       url('font/fontAwesome/fa-solid-900.svg#fontawesome') format("svg"); }
 
 
 body
@@ -75,28 +75,37 @@ input[type=checkbox]{
     visibility: hidden;
 }
 
-label {
+label.checkbox {
 border:1px solid #d9d9d9;
 border-radius:25px;
-position:relative;
 display:inline-block;
 position: relative;
 text-align:right;
 padding: 15px 0 15px 50px;
-margin: auto;
 }
 
-
-
-label::before {
-    font-family: 'Font Awesome 5 Free';
+.economique::before {
     content:'\f53a';
+    }
+
+.familial::before {
+    content:'\f1ae';
+    }
+
+.romantique::before {
+    content:'\f004';
+    }
+.animaux::before {
+    content:'\f6d3';
+    }
+
+.checkbox::before {
+    font-family:"Font Awesome 5 Free";
+    color: #0065FC;
     text-align:center;
-    display: block;
-    padding-top: 15px;
-    color:blue;
+    padding-top:15px;
     position: absolute;
-    top:0px;
+    top:0;
     left:0;
    	width:50px;
 	height:100%;
@@ -104,15 +113,15 @@ label::before {
 	border-radius: 50%;
     box-sizing: border-box;
 	transition: 0.3s;
-              }
+}
 
-input:checked + label {
+input:checked + .checkbox{
 	background: #0065FC;
     padding: 15px 50px 15px 0px;
    
 }
 
-input:checked + label::before {
+input:checked + .checkbox::before {
 	left: calc(100%);
 	transform: translateX(-100%);
 }
