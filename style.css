@@ -66,6 +66,27 @@ border-top: 2px solid #0065FC;
 padding-top:45px;
 padding-bottom: 45px; 
 }
+/* Pour les icônes */
+
+.markerIcon::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f3c5';
+}
+
+.iconeInfo::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f129';
+}
+
+.star::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f005';
+}
+
+.chart::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f201';
+}
 
 /* Pour les checkbox de la section search */
 
@@ -76,28 +97,15 @@ input[type=checkbox]{
 }
 
 label.checkbox {
-border:1px solid #d9d9d9;
-border-radius:25px;
-display:inline-block;
-position: relative;
-text-align:right;
-padding: 15px 0 15px 50px;
+    border:1px solid #d9d9d9;
+    border-radius:25px;
+    display:inline-block;
+    position: relative;
+    text-align:right;
+    padding: 15px 0 15px 50px;
 }
 
-.economique::before {
-    content:'\f53a';
-    }
 
-.familial::before {
-    content:'\f1ae';
-    }
-
-.romantique::before {
-    content:'\f004';
-    }
-.animaux::before {
-    content:'\f6d3';
-    }
 
 .checkbox::before {
     font-family:"Font Awesome 5 Free";
@@ -114,7 +122,6 @@ padding: 15px 0 15px 50px;
     box-sizing: border-box;
 	transition: 0.3s;
 }
-
 input:checked + .checkbox{
 	background: #0065FC;
     padding: 15px 50px 15px 0px;
@@ -125,4 +132,22 @@ input:checked + .checkbox::before {
 	left: calc(100%);
 	transform: translateX(-100%);
 }
+
+    /* pour chaque image des filtres de recherche */
+    
+    .economique::before {
+        content:'\f53a';
+        }
+
+    .familial::before {
+        content:'\f1ae';
+        }
+
+    .romantique::before {
+        content:'\f004';
+        }
+    .animaux::before {
+        content:'\f6d3';
+        }
+
 
