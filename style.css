@@ -1,11 +1,31 @@
 @font-face {
     font-family: 'ralewaythin';
-    src: url('/font/raleway/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/font/raleway/raleway-variablefont_wght-webfont.woff') format('woff');
+    src: url('font/raleway/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('font/RalewayBold/raleway-bold-webfont.woff2') format('woff2'),
+         url('font/RalewayBold/raleway-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  src: url('font/fontAwesome/fa-solid-900.eot');
+  src: url('font/fontAwesome/fa-solid-900.eot?#iefix') format("embedded-opentype"), 
+       url('font/fontAwesome/fa-solid-900.woff2') format("woff2"), 
+       url('font/fontAwesome/fa-solid-900.woff') format("woff"), 
+       url('font/fontAwesome/fa-solid-900.ttf') format("truetype"), 
+       url('font/fontAwesome/fa-solid-900.svg#fontawesome') format("svg"); }
+
 
 body
 {font-family:ralewaythin,serif;
@@ -27,6 +47,9 @@ text-decoration:none;}
 .black
 {color:Black;}
 
+.bold
+{font-weight: bold;}
+
 header
 
 {display: flex;
@@ -45,7 +68,6 @@ header ul
 {display:flex;
 list-style-type: none;
 justify-content: space-between;
-
 }
 
 header a:hover
@@ -54,4 +76,132 @@ border-top: 2px solid #0065FC;
 padding-top:45px;
 padding-bottom: 45px; 
 }
+/* Pour les icônes */
+
+.iconeInfo::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f129';
+    font-size: 0.8em;
+    border: 1px solid #f1f1f1;
+    padding: 3px 6px 3px 6px;
+    border-radius: 50%;
+    margin-right:10px;
+}
+
+.star::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f005';
+}
+
+.chart::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f201';
+}
+/* section search */
+.markerIcon::before {
+    font-family: 'Font Awesome 5 Free';
+    content:'\f3c5';
+    background:#f1f1f1;
+    border-radius: 15px 0 0 15px;
+    padding:17px;
+    margin:none;
+}
+
+#search::placeholder {
+    font-family: 'ralewaythin';
+    font-weight: bold;
+    font-size: 1em;
+    color:black;
+    height:50px;
+  }
+#searchBar {
+    display:inline-table;
+    margin:none;
+}
+
+.bouton {
+    color:white;
+    background: #0065FC;
+    border-radius: 0 15px 15px 0;
+    border:none;
+}
+.champ {
+    border-top : 1px solid;
+    border-bottom-color: #f1f1f1;
+    border-top-color: #f1f1f1;
+    border-left:none;
+    border-right:none;
+}
+
+.search {
+    font-family: 'ralewaythin';
+    font-weight: bold;    
+    font-size: 1em;
+    padding:15px;
+    height: 50px;
+}
+
+/* Pour les checkbox de la section search */
+
+
+input[type=checkbox]{
+    height:0;
+    width:0;
+    visibility: hidden;
+}
+
+label.checkbox {
+    border:1px solid #d9d9d9;
+    border-radius:25px;
+    display:inline-block;
+    position: relative;
+    text-align:right;
+    padding: 15px 15px 15px 65px;
+}
+
+
+
+.checkbox::before {
+    font-family:"Font Awesome 5 Free";
+    color: #0065FC;
+    text-align:center;
+    padding-top:15px;
+    position: absolute;
+    top:0;
+    left:0;
+   	width:50px;
+	height:100%;
+	background: #deebff;
+	border-radius: 50%;
+    box-sizing: border-box;
+	transition: 0.3s;
+}
+input:checked + .checkbox{
+	background: #0065FC;
+    padding: 15px 65px 15px 15px;
+   
+}
+
+input:checked + .checkbox::before {
+	left: calc(100%);
+	transform: translateX(-100%);
+}
+
+    /* pour chaque image des filtres de recherche */
+    
+    .economique::before {
+        content:'\f53a';
+        }
+
+    .familial::before {
+        content:'\f1ae';
+        }
+
+    .romantique::before {
+        content:'\f004';
+        }
+    .animaux::before {
+        content:'\f6d3';
+        }
+
 
