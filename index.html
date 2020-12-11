@@ -24,10 +24,10 @@
         <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
             <p> En plein centre ville ou en pleine nature</p>
                 <form method="post" action="traitement.php">
-                    <p>
-                        <label for="search" class=markerIcon > </label> <input type=search placeholder="Marseille, France" /> <input type="submit" value="Rechercher" />
-                    </p>
-                    <p> Filtres
+                    <div id=searchBar>
+                        <label for="search" class='markerIcon' ></label><input type=search id=search class='search champ' placeholder="Marseille, France" /><input type="submit" value="Rechercher" class='search bouton' />
+                    </div>
+                    <p class="bold"> Filtres
                         <input type="checkbox" name="economique" id="economique" />  <label for="economique" class="checkbox economique"> Économique </label>                            
                         <input type="checkbox" name="familial" id=familial > <label for="familial" class="checkbox familial"> Familial </label>
                         <input type="checkbox" name="romantique" id="romantique"> <label for="romantique" class="checkbox romantique"> Romantique </label>
