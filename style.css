@@ -98,6 +98,10 @@ padding-bottom: 45px;
     content: '\f201';
 }
 /* section search */
+
+#search {
+    display:inline-block;
+}
 .markerIcon::before {
     font-family: 'Font Awesome 5 Free';
     content:'\f3c5';
@@ -203,6 +207,35 @@ input:checked + .checkbox::before {
     .animaux::before {
         content:'\f6d3';
         }
+
+section {
+    display:flex;
+}
+
+article {
+    display:flex;
+    flex-grow:2;
+    flex-direction: column;
+}
+
+#hebergement {
+    display:flex;
+    flex-direction: row;
+    flex-grow:2;
+}
+
+aside {
+    display:flex;
+    flex-grow:1;
+    flex-direction: column;
+}
+
+#titrelogo {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
 
 footer {
     display:flex;
