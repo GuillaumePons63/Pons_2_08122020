@@ -90,13 +90,16 @@ header a:hover{
     margin-right:10px;
 }
 
-.star::before 
-    {font-family: 'Font Awesome 5 Free';
-    content: '\f005';}
+.star::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f005';
+}
 
-.chart::before 
-    {font-family: 'Font Awesome 5 Free';
-    content: '\f201';}
+.chart::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f201';
+    display:inline;
+}
 
 /* section search */
 
@@ -226,31 +229,24 @@ section {
 
 article {
     display:flex;
-    flex-grow:2;
+    flex : 3;
     flex-direction: column;
     background-color: #f2f2f2;
     border-radius :10px;
     padding-left:30px;
-    margin-right: 30px;
+    margin-right:30px;
 }
 
 #hebergement {
     display:flex;
     flex-direction:row;
-    flex-grow:2;
-    flex-wrap : wrap ;
-    margin: none;
-    padding:none;
+    flex-wrap :wrap;
 }
 
 .description {
     position:relative;
-    line-height: 0;
+    line-height:0;
     padding-left:10px;
-}
-
-.vignette a {
-    outline: none;
 }
 
 .vignette {
@@ -261,8 +257,6 @@ article {
     margin:0px 30px 30px 0px;
     width:250px;
 }
-
-
 
 /* Les images des hebergements */
     .image {
@@ -306,8 +300,43 @@ article {
         background-position: center;
     }
 
+aside {
+    display:flex;
+    flex:1.5;
+    flex-direction:column;
+    background-color:#f2f2f2;
+    border-radius :10px;
+    padding-left:30px;
+    margin-right:30px;
+}
 
+.vignetteaside {
+    padding:5px;
+    background-color: #ffffff;
+    border-radius:10px;
+    height:200px;
+    margin:0px 30px 30px 0px;
+    width:250px;
+}
 
+.descriptionside{
+    position: relative;
+    height:110px;
+    border-radius: 10px 10px 0 0;
+    width:auto;
+}
+.imageside{
+     height:110px;
+        border-radius: 10px 10px 0 0;
+        width:auto;
+    position: absolute;
+}
+
+.imageside1 {
+    background:url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) norepeat;
+    background-size: cover;
+    background-position: center;
+}
 
 #activite {
     display:flex;
@@ -318,18 +347,11 @@ article {
     flex-wrap: wrap;
 }
 
-aside {
-    display:flex;
-    flex-grow:1;
-    flex-direction: column;
-}
-
 #titrelogo {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 
 footer {
     display:flex;
