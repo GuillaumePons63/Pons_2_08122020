@@ -227,6 +227,10 @@ article {
     display:flex;
     flex-grow:2;
     flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius : 10px;
+    padding:40px;
+    margin-right: 30px;
 }
 
 #hebergement {
@@ -234,23 +238,28 @@ article {
     flex-direction: row;
     flex-grow:2;
     flex-wrap : wrap ;
-    background-color: #f2f2f2;
-    border-radius : 10px;
-    padding:40px;
 }
 
 .description {
     position:relative;
     line-height: 0;
+    
 }
 
+.vignette {
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height:200px;
+    margin : 30px;
+}
 #HerbergementImage1 {
     background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat;
-    background-size: 200px;
-    height:200px;
+    background-size:cover;
+    height:110px;
     position:relative;
-    width:auto;
-    }
+    border-radius: 10px 10px 0 0; 
+}
 
 #activite {
     display:flex;
