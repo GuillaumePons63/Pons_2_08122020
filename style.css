@@ -37,7 +37,13 @@ body{
     margin:3.5%;
 }
 
+h1{
+    font-size: 1.5em;
+}
 
+h2{
+    font-size:1.2em;
+}
 
 .bold
 {font-weight: bold;}
@@ -228,13 +234,33 @@ article {
     flex-direction: row;
     flex-grow:2;
     flex-wrap : wrap ;
+    background-color: #f2f2f2;
+    border-radius : 10px;
+    padding:40px;
 }
+
+.description {
+    position:relative;
+    line-height: 0;
+}
+
+#HerbergementImage1 {
+    background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat;
+    background-size: 200px;
+    height:200px;
+    position:relative;
+    width:auto;
+    }
 
 #activite {
     display:flex;
     flex-direction: column;
 }
 
+.activite{
+    flex-wrap: wrap;
+    height: 500px;
+}
 aside {
     display:flex;
     flex-grow:1;
