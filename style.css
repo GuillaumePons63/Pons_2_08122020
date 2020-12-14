@@ -98,7 +98,9 @@ header a:hover{
 .chart::before {
     font-family: 'Font Awesome 5 Free';
     content: '\f201';
-    display:inline;
+    font-size : 1.5em;
+    text-align: right;
+    padding: 15px;
 }
 
 /* section search */
@@ -310,30 +312,35 @@ aside {
     margin-right:30px;
 }
 
-.vignetteaside {
+.vignetteAside {
+    display: block;
     padding:5px;
-    background-color: #ffffff;
     border-radius:10px;
-    height:200px;
-    margin:0px 30px 30px 0px;
-    width:250px;
+    background-color:#ffffff;
+    border-radius:10px;
+    margin-right:30px;
+    width:auto;
+    height:140px;
 }
 
 .descriptionside{
     position: relative;
-    height:110px;
     border-radius: 10px 10px 0 0;
-    width:auto;
-}
-.imageside{
-     height:110px;
-        border-radius: 10px 10px 0 0;
-        width:auto;
-    position: absolute;
+    left:130px;
+    top:0px;
 }
 
-.imageside1 {
-    background:url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) norepeat;
+.imageside{
+    position: absolute;
+    height:140px;
+    margin:auto;
+    width:120px;
+    border-radius:10px 0 0 10px;
+}
+    
+    
+.imageside1{
+    background:url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
