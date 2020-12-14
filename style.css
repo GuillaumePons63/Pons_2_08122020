@@ -42,7 +42,7 @@ h1{
 }
 
 h2{
-    font-size:1.2em;
+    font-size:1em;
 }
 
 .bold
@@ -229,7 +229,6 @@ article {
     flex-direction: column;
     background-color: #f2f2f2;
     border-radius : 10px;
-    padding:40px;
     margin-right: 30px;
 }
 
@@ -243,7 +242,8 @@ article {
 .description {
     position:relative;
     line-height: 0;
-    
+    padding-left: 10px;
+    position:relative;
 }
 
 .vignette {
@@ -251,15 +251,57 @@ article {
     background-color: #ffffff;
     border-radius: 10px;
     height:200px;
-    margin : 30px;
+    margin :30px;
+    width:250px;
+    
 }
-#HerbergementImage1 {
-    background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat;
-    background-size:cover;
-    height:110px;
-    position:relative;
-    border-radius: 10px 10px 0 0; 
-}
+
+
+
+/* Les images des hebergements */
+    .image {
+        height:110px;
+        border-radius: 10px 10px 0 0;
+        width:auto;
+    }
+    .image1 {
+        background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat ;
+        background-size:cover;
+        background-position: center;
+    }
+
+    .image2 {
+        background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .image3 {
+        background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .image4{
+        background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .image5{
+        background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .image6 {
+        background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+
 
 #activite {
     display:flex;
