@@ -365,8 +365,58 @@ aside {
 }
 
 .activite{
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    max-height: 500px;
 }
+
+.vignettebot{
+    border:2px solid #f1f1f1;
+    border-radius: 10px;
+    width: auto;
+    
+}
+
+.imageBot1{
+    background: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    height:490px;
+    margin: none;
+}
+
+.imageBot2{
+    background: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:220px;
+}
+
+
+.imageBot3{
+    background: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:110px;
+}
+
+.imageBot4{
+    background: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:490px;
+}
+
+.imageBot5{
+    background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:110px;
+}
+
+
+
 
 #titrelogo {
     display:flex;
