@@ -368,22 +368,23 @@ aside {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 500px;
+    max-height: 550px;
+    justify-content: space-between;
 }
 
 .vignettebot{
     border:2px solid #f1f1f1;
     border-radius: 10px;
-    width: auto;
-    
+    width: 15%;
+    margin: 0;
+    padding: 0%;
 }
 
 .imageBot1{
     background: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) no-repeat;
     background-size:cover;
     background-position: center;
-    height:490px;
-    margin: none;
+    height:450px;
 }
 
 .imageBot2{
@@ -405,7 +406,7 @@ aside {
     background: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    height:490px;
+    height:450px;
 }
 
 .imageBot5{
@@ -415,6 +416,12 @@ aside {
     height:110px;
 }
 
+.imageBot6{
+    background: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:220px;
+}
 
 
 
