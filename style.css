@@ -65,6 +65,10 @@ a{
     color: black;
 }
 
+.shadow{
+    box-shadow: 0 5px 5px #d9d9d9;
+}
+
 header ul{
     display:flex;
     list-style-type: none;
@@ -237,20 +241,22 @@ article {
     flex-direction: column;
     background-color: #f2f2f2;
     border-radius :10px;
-    padding-left:30px;
-    margin-right:30px;
-}
+    padding : 2.1% ;
+    margin-right:2.1%;
+} 
 
+    
 #hebergement {
     display:flex;
     flex-direction:row;
     flex-wrap :wrap;
+    justify-content: space-around;
 }
 
 .description {
     position:relative;
     line-height:0;
-    padding-left:10px;
+    padding:auto;
 }
 
 .vignette {
@@ -258,8 +264,8 @@ article {
     background-color: #ffffff;
     border-radius:10px;
     height:200px;
-    margin:0px 30px 30px 0px;
-    width:250px;
+    margin:0 2.1% 2.1% 0;
+    width: 250px;
 }
 
 /* Les images des hebergements */
@@ -368,12 +374,12 @@ aside {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 555px;
+    max-height: 557px;
     justify-content: space-between;
 }
 
 .vignettebot{
-    border:2px solid #f1f1f1;
+    border:1px solid #f1f1f1;
     border-radius: 15px;
     width: 20%;
 }
@@ -426,6 +432,8 @@ aside {
 
 .titrebot{
     height:50px;
+    padding-left:20px;
+    vertical-align: middle;
 }
 
 #titrelogo {
