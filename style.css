@@ -368,23 +368,24 @@ aside {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 550px;
+    max-height: 555px;
     justify-content: space-between;
 }
 
 .vignettebot{
     border:2px solid #f1f1f1;
-    border-radius: 10px;
-    width: 15%;
-    margin: 0;
-    padding: 0%;
+    border-radius: 15px;
+    width: 20%;
 }
 
+.imageBot {
+    border-radius: 15px 15px  0px 0px;
+}
 .imageBot1{
     background: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) no-repeat;
     background-size:cover;
     background-position: center;
-    height:450px;
+    height:490px;
 }
 
 .imageBot2{
@@ -406,7 +407,7 @@ aside {
     background: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    height:450px;
+    height:490px;
 }
 
 .imageBot5{
@@ -423,7 +424,9 @@ aside {
     height:220px;
 }
 
-
+.titrebot{
+    height:50px;
+}
 
 #titrelogo {
     display:flex;
