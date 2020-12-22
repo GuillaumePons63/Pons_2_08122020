@@ -13,8 +13,8 @@
         <figure> <img src="images/logo/Reservia.svg" alt="Logo reservia" /></figure>
         <nav> 
             <ul>
-                    <li> <a class=navMobile1 href=#hebergement> Hébergements</a> </li>
-                    <li> <a class=navMobile2 href=#activite> Activités</a> </li> 
+                    <li> <a class="navMobile navMobile1" href=#hebergement> Hébergements</a> </li>
+                    <li> <a class="navMobile navMobile2" href=#activite> Activités</a> </li> 
                     <li> <a class=bold href="">S'inscrire</a> </li>
             </ul>
         </nav>
@@ -22,18 +22,18 @@
     <!-- Recherche -->
     <section id=search>
         <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p> En plein centre ville ou en pleine nature</p>
+            <p>En plein centre ville ou en pleine nature</p>
                 <form method="post" action="traitement.php">
                     <div id=searchBar>
                         <label for="search" class='markerIcon' ></label><input type=search id=search class='search champ' placeholder="Marseille, France" /><input type="submit" value="Rechercher" class='search bouton' />
-                    </div>
-                    <p class="bold"> Filtres
+                    </div> <br />
+                    <p class="bold inline"> Filtres </p>
+                    <p class="bold inline"> 
                         <input type="checkbox" name="economique" id="economique" />  <label for="economique" class="checkbox economique"> Économique </label>                            
                         <input type="checkbox" name="familial" id=familial > <label for="familial" class="checkbox familial"> Familial </label>
                         <input type="checkbox" name="romantique" id="romantique"> <label for="romantique" class="checkbox romantique"> Romantique </label>
                         <input type="checkbox" name="animaux" id="animaux"> <label for="animaux" class="checkbox animaux"> Animaux autorisés </label>
                     </p>
-                    
                     <p> <span class='iconeInfo blue'> </span> Plus de 500 logement sont disponibles dans cette ville </p>
         </form>
     </section>

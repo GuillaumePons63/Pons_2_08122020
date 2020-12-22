@@ -115,6 +115,7 @@ header a:hover{
 
 #search {
     display:inline-block;
+    margin-bottom: 15px;
 }
 
 .markerIcon::before {
@@ -163,10 +164,15 @@ header a:hover{
 
 /* Pour les checkbox de la section search */
 
+.checkbox{
+    margin-right: 15px;
+}
+
 input[type=checkbox]{
     height:0;
     width:0;
     visibility: hidden;
+    position: absolute;
 }
 
 label.checkbox {
@@ -269,6 +275,7 @@ article {
     height:200px;
     margin:0 2.1% 2.1% 0;
     width: 25.8%;
+    min-width: 200px;
 }
 
 /* Les images des hebergements */
@@ -338,7 +345,7 @@ aside {
     border-radius: 10px 10px 0 0;
     left:130px;
     top:0px;
-    width: 65%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -379,7 +386,7 @@ aside {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 557px;
+    height: 557px;
     justify-content:space-between;
 }
 
@@ -466,23 +473,47 @@ footer ul {
     line-height: 30px;
 }
 
+.inline {
+    display: inline-block;
+    margin-right: 15px;
+}
+
 @media all and (max-width: 1280px) {
+    section {
+        flex-direction: column-reverse;
+    }
+}
+
+@media all and (max-width: 1024px) {
 
     .navMobile1 {
         position:absolute;
         top:15%;
-        left:25%;
+        left:0;
     }
     
     .navMobile2 {
         position:absolute;
-        right:25%;
+        right:0;
         top:15%;
     }
 
-    section {
-        flex-direction: column-reverse;
+    .navMobile {
+        border-bottom: 1px solid #d9d9d9;
+        padding-bottom:15px;
+        width: 50%;
+        text-align: center;
+    } 
+
+    header a:hover{
+        color:#0065FC;
+        border-top:none;
+        border-bottom: 2px solid #0065FC;
+        padding-top:0;
+        padding-bottom: 15px; 
     }
+
+    
 
     footer {
         flex-direction: column;
@@ -498,7 +529,7 @@ footer ul {
 
     .activite {
         flex-direction: column;
-        max-height: none;
+        height: auto;
     }
 
     .vignettebot {
@@ -506,16 +537,36 @@ footer ul {
         margin-bottom: 23px;
     }
 
+    
     aside {
         margin-bottom: 23px;
+        width:103.5%; 
+        position : relative;
+        left:-3.5%;
+        border-radius: 0 0 0 0;   
     }
 
     article {
-        background-color: #ffffff
+        background-color: #ffffff;
+        padding:0;
+        margin: 0;
     }
 
     .vignette{
         width:100%;
+        margin-right: 0;
+
     }
-    
+        
+    .inline{
+        display: block;
+        margin-block-start: 0em;
+    }
+
+    .checkbox {
+        
+        margin-right: 20px;
+        margin-bottom: 15px;
+        margin-left:0;
+    }
 }
