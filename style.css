@@ -4,15 +4,14 @@
          url('font/raleway/raleway-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
 @font-face {
     font-family: 'ralewaythin';
     src: url('font/RalewayBold/raleway-bold-webfont.woff2') format('woff2'),
          url('font/RalewayBold/raleway-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
-
 }
 
 @font-face {
@@ -26,7 +25,6 @@
        url('font/fontAwesome/fa-solid-900.ttf') format("truetype"), 
        url('font/fontAwesome/fa-solid-900.svg#fontawesome') format("svg"); }
 
-
 body{
     font-family:ralewaythin,serif;
     padding:0;
@@ -35,6 +33,10 @@ body{
 
 #blocpage{
     margin:3.5%;
+}
+
+figure {
+    margin-left: 0;
 }
 
 h1{
@@ -243,6 +245,7 @@ article {
     border-radius :10px;
     padding : 2.1% ;
     margin-right:2.1%;
+    justify-content: space-around;
 } 
 
     
@@ -265,7 +268,7 @@ article {
     border-radius:10px;
     height:200px;
     margin:0 2.1% 2.1% 0;
-    width: 250px;
+    width: 25.8%;
 }
 
 /* Les images des hebergements */
@@ -367,18 +370,17 @@ aside {
         background-position: center;
     }
 
-
 #activite {
     display:flex;
     flex-direction: column;
 }
 
-.activite{
+.activite {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 557px;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .vignettebot{
@@ -390,53 +392,57 @@ aside {
 .imageBot {
     border-radius: 15px 15px  0px 0px;
 }
-.imageBot1{
-    background: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) no-repeat;
-    background-size:cover;
-    background-position: center;
-    height:490px;
-}
 
-.imageBot2{
-    background: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height:220px;
-}
+    .imageBot1{
+        background: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) no-repeat;
+        background-size:cover;
+        background-position: center;
+        height:490px;
+    }
+
+    .imageBot2{
+        background: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:220px;
+    }
 
 
-.imageBot3{
-    background: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height:110px;
-}
+    .imageBot3{
+        background: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:110px;
+    }
 
-.imageBot4{
-    background: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height:490px;
-}
+    .imageBot4{
+        background: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:490px;
+    }
 
-.imageBot5{
-    background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height:110px;
-}
+    .imageBot5{
+        background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:110px;
+    }
 
-.imageBot6{
-    background: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height:220px;
-}
+    .imageBot6{
+        background: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:220px;
+    }
 
 .titrebot{
     height:50px;
     padding-left:20px;
-    vertical-align: middle;
+}
+
+.titrebot h2{
+    padding-top: 10px;
 }
 
 #titrelogo {
@@ -458,4 +464,58 @@ footer ul {
     padding:0;
     font-size:1em;
     line-height: 30px;
+}
+
+@media all and (max-width: 1280px) {
+
+    .navMobile1 {
+        position:absolute;
+        top:15%;
+        left:25%;
+    }
+    
+    .navMobile2 {
+        position:absolute;
+        right:25%;
+        top:15%;
+    }
+
+    section {
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .imageBot {
+        height:130px;
+    }
+
+    #activite {
+        flex-direction: column;
+    }
+
+    .activite {
+        flex-direction: column;
+        max-height: none;
+    }
+
+    .vignettebot {
+        width: 100%;
+        margin-bottom: 23px;
+    }
+
+    aside {
+        margin-bottom: 23px;
+    }
+
+    article {
+        background-color: #ffffff
+    }
+
+    .vignette{
+        width:100%;
+    }
+    
 }
