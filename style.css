@@ -140,6 +140,10 @@ header a:hover{
     margin:none;
 }
 
+.bouton2{
+    display: none;
+}
+
 .bouton {
     color:white;
     background: #0065FC;
@@ -568,5 +572,28 @@ footer ul {
         margin-right: 20px;
         margin-bottom: 15px;
         margin-left:0;
+    }
+
+    .bouton {
+        display: none;        
+    }
+    
+    .bouton2{
+        display:inline-block;
+        color:white;
+        background: #0065FC;
+        border-radius: 15px 15px 15px 15px;
+        border:none;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+    }
+     
+    .iconeSearch::before {
+        font-family: "Font Awesome 5 Free";
+        content: '\f002';
+        color:white;
+        position:relative;
+        left : 17px;
     }
 }
