@@ -197,13 +197,14 @@ label.checkbox {
 	transition: 0.3s;
 }
 
-input:checked + .checkbox{
+input:hover + .checkbox{
 	background: #0065FC;
     padding: 15px 65px 15px 15px;
+    color:white;
    
 }
 
-input:checked + .checkbox::before {
+input:hover + .checkbox::before {
 	left: calc(100%);
 	transform: translateX(-100%);
 }
