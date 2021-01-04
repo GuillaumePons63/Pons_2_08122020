@@ -240,7 +240,7 @@ main {
     display:flex;
 }
 
-article {
+#main {
     display:flex;
     flex : 3;
     flex-direction: column;
@@ -378,7 +378,7 @@ aside {
         background-position: center;
     }
 
-#activite {
+article {
     display:flex;
     flex-direction: column;
 }
@@ -529,7 +529,7 @@ footer ul {
         height:130px;
     }
 
-    #activite {
+    article {
         flex-direction: column;
     }
 
@@ -552,7 +552,7 @@ footer ul {
         border-radius: 0 0 0 0;   
     }
 
-    article {
+    #main {
         background-color: #ffffff;
         padding:0;
         margin: 0;
