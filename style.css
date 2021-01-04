@@ -236,7 +236,7 @@ input:checked + .checkbox::before {
 {color:Black;}
 
 
-section {
+main {
     display:flex;
 }
 
@@ -521,7 +521,7 @@ footer ul {
         padding-bottom: 15px; 
     }
 
-    section {
+    main {
         flex-direction: column-reverse;
     }
 
