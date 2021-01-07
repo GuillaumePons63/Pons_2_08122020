@@ -120,7 +120,6 @@ header a:hover{
     background:#f1f1f1;
     border-radius: 15px 0 0 15px;
     padding:17px;
-    margin:none;
 }
 
 #search::placeholder {
@@ -528,10 +527,23 @@ footer ul {
         padding-bottom: 15px; 
     }
     
-    a {
+    nav a {
         color:#0065fc;
     }
     
+    #search {
+        display:inline;
+    }
+
+    #searchBar {
+        display:block;
+    }
+
+    .champ {
+        width:86%;
+        
+    }
+
     main {
         flex-direction: column-reverse;
     }
@@ -593,25 +605,30 @@ footer ul {
         display: none;        
     }
     
+    
+
     .bouton2{
         display:inline-block;
-        color:white;
         background: #0065FC;
         border-radius: 15px 15px 15px 15px;
         border:none;
+        position:absolute;
         height: 50px;
         width: 50px;
-        position: absolute;
+        right:3.5%;
     }
-     
-    .iconeSearch::before {
+    
+    #iconeSearch::before {
         font-family: "Font Awesome 5 Free";
         content: '\f002';
         color:white;
-        position:relative;
-        left : 17px;
+        position:absolute;
+        padding:17px;
+        right:3.5%;
     }
+    
 
+    
     footer {
         flex-direction: column;
     }
