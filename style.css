@@ -1,0 +1,607 @@
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('font/raleway/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('font/RalewayBold/raleway-bold-webfont.woff2') format('woff2'),
+         url('font/RalewayBold/raleway-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  src: url('font/fontAwesome/fa-solid-900.eot');
+  src: url('font/fontAwesome/fa-solid-900.eot?#iefix') format("embedded-opentype"), 
+       url('font/fontAwesome/fa-solid-900.woff2') format("woff2"), 
+       url('font/fontAwesome/fa-solid-900.woff') format("woff"), 
+       url('font/fontAwesome/fa-solid-900.ttf') format("truetype"), 
+       url('font/fontAwesome/fa-solid-900.svg#fontawesome') format("svg"); }
+
+body{
+    font-family:ralewaythin,serif;
+    padding:0;
+    margin:0;
+}
+
+#blocpage{
+    margin:3.5%;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+h2{
+    font-size:1em;
+}  
+
+.bold{
+    font-weight: bold;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height:115px;
+    margin:0;
+}
+
+figure {
+    margin-left: 0;
+}
+
+nav{
+    width:33%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header ul{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+header a:hover{
+    color:#0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top:45px;
+    padding-bottom: 45px; 
+}
+
+/* Pour les icônes */
+
+.iconeInfo::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f129';
+    font-size: 0.8em;
+    border: 1px solid #f1f1f1;
+    padding: 3px 6px 3px 6px;
+    border-radius: 50%;
+    margin-right:10px;
+}
+
+.star::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f005';
+}
+
+.chart::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f201';
+    font-size : 1.5em;
+    text-align: right;
+    margin: 30px;
+    position: relative;
+    top: 30px;
+}
+
+/* section search */
+
+#search {
+    display:inline-block;
+    margin-bottom: 15px;
+}
+
+.markerIcon::before {
+    font-family: 'Font Awesome 5 Free';
+    content:'\f3c5';
+    background:#f1f1f1;
+    border-radius: 15px 0 0 15px;
+    padding:17px;
+    margin:none;
+}
+
+#search::placeholder {
+    font-family: 'ralewaythin';
+    font-weight: bold;
+    font-size: 1em;
+    color:black;
+    height:50px;
+}
+
+#searchBar {
+    display:inline-table;
+    margin:none;
+}
+
+
+.bouton {
+    color:white;
+    background: #0065FC;
+    border-radius: 0 15px 15px 0;
+    border:none;
+}
+.champ {
+    border-top : 1px solid;
+    border-bottom-color: #f1f1f1;
+    border-top-color: #f1f1f1;
+    border-left:none;
+    border-right:none;
+}
+
+.search {
+    font-family: 'ralewaythin';
+    font-weight: bold;    
+    font-size: 1em;
+    padding:15px;
+    height: 50px;
+}
+
+/* Pour les checkbox de la section search */
+
+.checkbox{
+    margin-right: 15px;
+}
+
+input[type=checkbox]{
+    height:0;
+    width:0;
+    visibility: hidden;
+    position: absolute;
+}
+
+label.checkbox {
+    border:1px solid #d9d9d9;
+    border-radius:25px;
+    display:inline-block;
+    position: relative;
+    text-align:right;
+    padding: 15px 15px 15px 65px;
+}
+
+.checkbox::before {
+    font-family:"Font Awesome 5 Free";
+    color: #0065FC;
+    text-align:center;
+    padding-top:15px;
+    position: absolute;
+    top:0;
+    left:0;
+   	width:50px;
+	height:100%;
+	background: #deebff;
+	border-radius: 50%;
+    box-sizing: border-box;
+	transition: 0.3s;
+}
+
+input:hover + .checkbox{
+	background: #0065FC;
+    padding: 15px 65px 15px 15px;
+    color:white;
+   
+}
+
+input:hover + .checkbox::before {
+	left: calc(100%);
+	transform: translateX(-100%);
+}
+
+    /* pour chaque image des filtres de recherche */
+    
+    .economique::before {
+        content:'\f53a';
+        }
+
+    .familial::before {
+        content:'\f1ae';
+        }
+
+    .romantique::before {
+        content:'\f004';
+        }
+    .animaux::before {
+        content:'\f6d3';
+        }
+
+
+
+/* couleur utilisé par les étoiles et les icones */
+.blue
+{color:#0065FC;}
+.grey
+{color:#d9d9d9;}
+.black
+{color:Black;}
+
+
+main {
+    display:flex;
+}
+
+#main {
+    display:flex;
+    flex : 3;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius :10px;
+    padding : 2.1% ;
+    margin-right:2.1%;
+    justify-content: space-between;
+} 
+
+    
+#hebergement {
+    display:flex;
+    flex-direction:row;
+    flex-wrap :wrap;
+    justify-content: space-between;
+}
+
+.description {
+    position:relative;
+    line-height:0;
+    padding:auto;
+}
+
+.shadow{
+    box-shadow: 0 5px 5px #d9d9d9;
+}
+
+.vignette {
+    padding:5px;
+    background-color: #ffffff;
+    border-radius:10px;
+    height:200px;
+    margin:0 0 2.1% 0;
+    width: 29.4%;
+    min-width: 200px;
+}
+
+/* Les images des hebergements */
+    .image {
+        height:110px;
+        border-radius: 10px 10px 0 0;
+        width:auto;
+    }
+    .image1 {
+        background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat ;
+        background-size:cover;
+        background-position: center;
+    }
+
+    .image2 {
+        background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .image3 {
+        background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .image4{
+        background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .image5{
+        background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .image6 {
+        background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+    }
+
+aside {
+    display:flex;
+    flex:1.5;
+    flex-direction:column;
+    background-color:#f2f2f2;
+    border-radius :10px;
+    padding-left:30px;
+    justify-content: space-between;
+}
+
+.vignetteAside {
+    display: block;
+    padding:5px;
+    background-color:#ffffff;
+    border-radius:10px;
+    margin-right:30px;
+    width:auto;
+    height:140px;
+    margin-bottom: 30px;
+}
+
+.descriptionside{
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    left:130px;
+    top:0px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.imageside{
+    position: absolute;
+    height:140px;
+    margin:auto;
+    width:120px;
+    border-radius:10px 0 0 10px;
+}
+        
+    .imageside1{
+        background:url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .imageside2{
+        background:url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .imageside3{
+        background:url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+article {
+    display:flex;
+    flex-direction: column;
+}
+
+.activite {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 557px;
+    justify-content:space-between;
+    align-content: space-between;
+}
+
+.vignettebot{
+    display:block;
+    border:1px solid #f1f1f1;
+    border-radius: 15px;
+    width:23%;
+    
+}
+
+.imageBot {
+    border-radius: 15px 15px  0px 0px;
+}
+
+    .imageBot1{
+        background: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) no-repeat;
+        background-size:cover;
+        background-position: center;
+        height:490px;
+    }
+
+    .imageBot2{
+        background: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:220px;
+    }
+
+
+    .imageBot3{
+        background: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:110px;
+    }
+
+    .imageBot4{
+        background: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:490px;
+    }
+
+    .imageBot5{
+        background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:110px;
+    }
+
+    .imageBot6{
+        background: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:220px;
+    }
+
+.titrebot{
+    height:50px;
+    padding-left:20px;
+}
+
+.titrebot h2{
+    padding-top: 10px;
+}
+
+#titrelogo {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer {
+    display:flex;
+    justify-content: space-between;
+    text-align:left;
+    background: #f2f2f2;
+    padding:3.5%;
+}
+
+footer ul {
+    list-style: none;
+    padding:0;
+    font-size:1em;
+    line-height: 30px;
+}
+
+.inline {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.bouton2 {
+    display:none;
+}
+
+@media all and (max-width: 1280px) {
+   .vignette {
+       width:40%;
+   }
+}
+
+@media all and (max-width: 1024px) {
+
+    .navMobile1 {
+        position:absolute;
+        top:15%;
+        left:0;
+    }
+    
+    .navMobile2 {
+        position:absolute;
+        right:0;
+        top:15%;
+    }
+
+    .navMobile {
+        border-bottom: 1px solid #d9d9d9;
+        padding-bottom:15px;
+        width: 50%;
+        text-align: center;
+    } 
+
+    header a:hover{
+        color:#0065FC;
+        border-top:none;
+        border-bottom: 2px solid #0065FC;
+        padding-top:0;
+        padding-bottom: 15px; 
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    .imageBot {
+        height:130px;
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+    .activite {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .vignettebot {
+        width: 100%;
+        margin-bottom: 23px;
+    }
+
+    
+    aside {
+        margin-bottom: 23px;
+        width:103.5%; 
+        position : relative;
+        left:-3.5%;
+        border-radius: 0 0 0 0;   
+    }
+
+    #main {
+        background-color: #ffffff;
+        padding:0;
+        margin: 0;
+    }
+
+    .vignette{
+        width:100%;
+        margin-right: 0;
+
+    }
+        
+    .inline{
+        display: block;
+        margin-block-start: 0em;
+    }
+
+    .checkbox {
+        
+        margin-right: 20px;
+        margin-bottom: 15px;
+        margin-left:0;
+    }
+
+    .bouton {
+        display: none;        
+    }
+    
+    .bouton2{
+        display:inline-block;
+        color:white;
+        background: #0065FC;
+        border-radius: 15px 15px 15px 15px;
+        border:none;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+    }
+     
+    .iconeSearch::before {
+        font-family: "Font Awesome 5 Free";
+        content: '\f002';
+        color:white;
+        position:relative;
+        left : 17px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}

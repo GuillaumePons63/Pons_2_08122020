@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title> Reservia </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id=blocpage>
+<!-- Header avec la navigation -->
+    <header> 
+        <figure> <img src="images/logo/Reservia.svg" alt="Logo reservia" /></figure>
+        <nav> 
+            <ul>
+                    <li> <a class="navMobile navMobile1" href=#hebergement> Hébergements</a> </li>
+                    <li> <a class="navMobile navMobile2" href=#activite> Activités</a> </li> 
+                    <li> <a class=bold href="#">S'inscrire</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Recherche -->
+    <section id=search>
+        <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+                <form method="post" action="traitement.php">
+                    <div id=searchBar>
+                        <label for="search" class='markerIcon' ></label><input type=search id=search class='search champ' placeholder="Marseille, France" /><input type="submit" value="rechercher" class="search bouton" /><input type="submit" value='' class="search bouton2" /><span class=iconeSearch></span>
+                    </div> <br />
+                    <p class="bold inline"> Filtres </p>
+                    <p class="bold inline"> 
+                        <input type="checkbox" name="economique" id="economique" />  <label for="economique" class="checkbox economique"> Économique </label>                            
+                        <input type="checkbox" name="familial" id=familial > <label for="familial" class="checkbox familial"> Familial </label>
+                        <input type="checkbox" name="romantique" id="romantique"> <label for="romantique" class="checkbox romantique"> Romantique </label>
+                        <input type="checkbox" name="animaux" id="animaux"> <label for="animaux" class="checkbox animaux"> Animaux autorisés </label>
+                    </p>
+                    <p> <span class='iconeInfo blue'> </span> Plus de 500 logement sont disponibles dans cette ville </p>
+        </form>
+    </section>
+<!-- Section hebergement -->
+    <main>
+        <section id=main>
+            <div id=titre>            
+                <h1> Hébergement à Marseille </h1> 
+            </div>
+            <div id=hebergement>
+                <a class="vignette shadow" href="">
+                    <div class="image image1"> </div>
+                    <div class=description>
+                        <h2> Auberge de la Cannebière </h2> <br />
+                        <p> Nuit à partir de 25€</p> <br />
+                        <p> <span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star grey"></span></p>
+                    </div>
+                </a> 
+                <a class="vignette shadow" href="">
+                    <div class="image image2"></div>
+                    <div class=description>
+                        <h2> Hôtel du port </h2> <br />
+                        <p> Nuit à partir de 52€</p> <br />
+                        <p> <span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star blue"></span></p>
+                    </div>
+                </a>
+                <a class="vignette shadow" href="">
+                    <div class="image image3"></div>
+                    <div class=description>
+                        <h2> Hôtel les mouettes </h2> <br />
+                        <p> Nuit à partir de 76€</p> <br />
+                        <p> <span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star grey"></span></p>
+                    </div>
+                </a>
+                <a class="vignette shadow" href="">
+                    <div class="image image4"></div>
+                    <div class=description>
+                        <h2> Hôtel de la mer </h2> <br />
+                        <p> Nuit à partir de 46€</p> <br />
+                        <p> <span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star grey"></span><span class="star grey"></span></p>
+                    </div>
+                </a>
+                <a class="vignette shadow" href="">
+                    <div class="image image5"></div>
+                    <div class=description>
+                        <h2> Auberge Le Panier </h2> <br />
+                        <p> Nuit à partir de 23€</p> <br />
+                        <p> <span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star grey"></span></p>
+                    </div>
+                </a>
+                <a class="vignette shadow" href="">
+                    <div class="image image6"></div>
+                    <div class=description>
+                        <h2> Hôtel chez Amina </h2> <br />
+                        <p> Nuit à partir de 96€</p> <br />
+                        <p> <span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star blue"></span></p>
+                    </div>
+                </a>
+            </div>
+                <a href=""> <h2>Afficher plus </h2> </a>        
+        </section>
+<!-- Les plus populaires -->        
+        <aside>
+            <div id=titrelogo>
+                <h1>Les plus populaires</h1> <span class="chart black"></span> </div>
+            <div class=asideArticle>
+                <a class="vignetteAside shadow" href="">
+                    <div class="imageside imageside1"></div>
+                    <div class="descriptionside">
+                        <div>
+                            <h2> Hôtel Le Soleil du matin </h2> 
+                            <p> Nuit à partir de 23€</p> 
+                        </div>
+                        <div>
+                            <p> <span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star blue"></span></p> 
+                        </div>
+                    </div>
+                </a>
+                <a class="vignetteAside shadow" href="">
+                    <div class="imageside imageside2"></div>
+                    <div class="descriptionside">
+                        <div>
+                            <h2> Au coeur de l'eau Chambres d'hôtes </h2>
+                            <p> Nuit à partir de 71€</p> 
+                        </div>
+                        <div>
+                            <p> <span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star grey"></span></p>
+                        </div>
+                    </div>
+                </a>
+                <a class="vignetteAside shadow" href="">
+                    <div class="imageside imageside3"></div>
+                    <div class="descriptionside">
+                        <div>
+                            <h2> Hôtel Tout bleu est Blanc </h2> 
+                            <p> Nuit à partir de 68€</p>
+                        </div>
+                        <div>
+                        <p> <span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star blue"></span><span class="star grey"></span></p>
+                        </div>
+                    </div>
+            </a>
+            </div>
+        </aside>
+    </main>
+<!-- section activités -->
+    <article>
+        <div id=titre>
+        <h3> Activités à Marseille </h3>
+        </div>
+        <div class=activite>
+            <div class="vignettebot shadow">
+                <a class=bot href="#"> 
+                    <div class="imageBot imageBot1"></div>
+                    <div class=titrebot>
+                    <h2>Vieux Port</h2>
+                    </div>
+                </a>                
+            </div>
+            <div class="vignettebot shadow">                
+                <a class=bot href="#"> 
+                    <div class="imageBot imageBot2"></div>
+                    <div class=titrebot>
+                    <h2>Fort de Pomègues</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="vignettebot shadow">
+                <a class=bot href="#"> 
+                    <div class="imageBot imageBot3"></div>
+                    <div class=titrebot>
+                    <h2>îles du Frioul</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="vignettebot shadow">
+                <a class=bot href="#"> 
+                    <div class="imageBot imageBot4"></div>
+                    <div class=titrebot>
+                    <h2>Parc National des Calanques</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="vignettebot shadow">
+                <a class=bot href="#"> 
+                    <div class="imageBot imageBot5"></div>
+                    <div class=titrebot>
+                    <h2>Notre-Dame-de-la-Garde</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="vignettebot shadow">
+                <a class=bot href="#">
+                    <div class="imageBot imageBot6"></div>
+                    <div class=titrebot>
+                    <h2>Parc Longchamp</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </article>
+</div>
+<!-- Footer -->
+<footer>
+    <div>
+    <h2> A propos </h2>
+        <ul>
+            <li><a href="#"> Fonctionnement du site </a></li>
+            <li> <a href="#"> Conditions générales de vente </a></li>
+            <li> <a href="#"> Données et confidentialité</a></li>
+        </ul>
+    </div>
+    <div>
+    <h2> Nos hébergements </h2>
+        <ul>
+            <li><a href="#"> Charte qualité </a></li>
+            <li> <a href="#"> Soumettre votre hotel </a></li>
+        </ul>
+    </div>
+    <div>
+    <h2> Assistance </h2>
+        <ul>
+            <li><a href="#"> Centre d'aide </a></li>
+            <li> <a href="#"> Nous contacter </a></li>
+    </ul>
+    </div>
+    <div>
+    </div>
+    </footer>
+</body>
+</html>
+    
