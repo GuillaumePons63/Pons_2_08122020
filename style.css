@@ -496,14 +496,19 @@ footer ul {
 
 @media all and (max-width: 1024px) {
 
+    figure {
+        margin-top:0;
+    }
     .navMobile1 {
         position:absolute;
+        color:black;
         top:15%;
         left:0;
     }
     
     .navMobile2 {
         position:absolute;
+        color:black;
         right:0;
         top:15%;
     }
@@ -522,7 +527,11 @@ footer ul {
         padding-top:0;
         padding-bottom: 15px; 
     }
-
+    
+    a {
+        color:#0065fc;
+    }
+    
     main {
         flex-direction: column-reverse;
     }
@@ -553,6 +562,8 @@ footer ul {
         left:-3.5%;
         border-radius: 0 0 0 0;   
     }
+
+
 
     #main {
         background-color: #ffffff;
