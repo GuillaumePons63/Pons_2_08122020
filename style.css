@@ -509,7 +509,7 @@ footer ul {
 
 @media all and (max-width: 1280px) {
    .vignette {
-       width:40%;
+       width:46%;
     }
     aside {
         justify-content: space-between;
