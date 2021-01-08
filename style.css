@@ -540,8 +540,13 @@ footer ul {
     }
 
     .champ {
-        width:86%;
+        width:90%;
         
+    }
+
+    .icone {
+        display:flex;
+        margin-bottom:30px;
     }
 
     main {
@@ -596,7 +601,7 @@ footer ul {
 
     .checkbox {
         
-        margin-right: 20px;
+        margin-right: 5px;
         margin-bottom: 15px;
         margin-left:0;
     }
@@ -632,4 +637,12 @@ footer ul {
     footer {
         flex-direction: column;
     }
+}
+
+
+@media all and (max-width: 530px){
+    .champ {
+        width:80%;
+    }
+
 }
