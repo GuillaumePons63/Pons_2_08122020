@@ -1,11 +1,28 @@
 @font-face {
     font-family: 'ralewaythin';
-    src: url('font/raleway/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('font/raleway/raleway-variablefont_wght-webfont.woff') format('woff');
+    src: url('font/Raleway/raleway-variablefont_wght-webfont.eot');
+    src: url('font/Raleway/raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Raleway/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/Raleway/raleway-variablefont_wght-webfont.woff') format('woff'),
+         url('font/Raleway/raleway-variablefont_wght-webfont.ttf') format('truetype'),
+         url('font/Raleway/raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('font/RalewayBold/raleway-bold-webfont.eot');
+    src: url('font/RalewayBold/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/RalewayBold/raleway-bold-webfont.woff2') format('woff2'),
+         url('font/RalewayBold/raleway-bold-webfont.woff') format('woff'),
+         url('font/RalewayBold/raleway-bold-webfont.ttf') format('truetype'),
+         url('font/RalewayBold/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
   font-family: 'Font Awesome 5 Free';
@@ -16,7 +33,9 @@
        url('font/fontAwesome/fa-solid-900.woff2') format("woff2"), 
        url('font/fontAwesome/fa-solid-900.woff') format("woff"), 
        url('font/fontAwesome/fa-solid-900.ttf') format("truetype"), 
-       url('font/fontAwesome/fa-solid-900.svg#fontawesome') format("svg"); }
+       url('font/fontAwesome/fa-solid-900.svg#fontawesome') format("svg"); 
+
+}
 
 body{
     font-family:ralewaythin;
@@ -29,15 +48,22 @@ body{
 }
 
 h1{
+    font-family: ralewaybold;
     font-size: 1.5em;
 }
 
 h2{
-    font-size:1em;
+    font-family: ralewaybold;
+    font-size:1.5em;
 }  
 
+h3{
+    font-family: ralewaybold;
+    font-size:1em;
+}
+
 .bold{
-    font-weight: bold;
+    font-family: ralewaybold;
 }
 
 header{
@@ -483,7 +509,11 @@ footer ul {
 @media all and (max-width: 1280px) {
    .vignette {
        width:40%;
-   }
+    }
+    aside {
+        justify-content: space-between;
+        padding-bottom:50px;
+    }   
 }
 
 @media all and (max-width: 1024px) {
@@ -570,7 +600,7 @@ footer ul {
         width:103.5%; 
         position : relative;
         left:-3.5%;
-        border-radius: 0 0 0 0;   
+        border-radius: 0 0 0 0; 
     }
 
 
