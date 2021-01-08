@@ -402,13 +402,14 @@ aside {
 article {
     display:flex;
     flex-direction: column;
+    margin-top:50px;
 }
 
 .activite {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 557px;
+    height: 443px;
     justify-content:space-between;
     align-content: space-between;
 }
@@ -429,14 +430,14 @@ article {
         background: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) no-repeat;
         background-size:cover;
         background-position: center;
-        height:490px;
+        height:390px;
     }
 
     .imageBot2{
         background: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) no-repeat;
         background-size: cover;
         background-position: center;
-        height:220px;
+        height:180px;
     }
 
 
@@ -451,7 +452,7 @@ article {
         background: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) no-repeat;
         background-size: cover;
         background-position: center;
-        height:490px;
+        height:390px;
     }
 
     .imageBot5{
@@ -465,11 +466,10 @@ article {
         background: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) no-repeat;
         background-size: cover;
         background-position: center;
-        height:220px;
+        height:180px;
     }
 
 .titrebot{
-    height:50px;
     padding-left:20px;
 }
 
