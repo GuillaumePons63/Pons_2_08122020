@@ -142,8 +142,7 @@ header a:hover{
 }
 
 #search::placeholder {
-    font-family: 'ralewaythin';
-    font-weight: bold;
+    font-family: 'ralewaybold';
     font-size: 1em;
     color:black;
     height:50px;
@@ -160,6 +159,7 @@ header a:hover{
     background: #0065FC;
     border-radius: 0 15px 15px 0;
     border:none;
+
 }
 .champ {
     border-top : 1px solid;
@@ -170,7 +170,7 @@ header a:hover{
 }
 
 .search {
-    font-family: 'ralewaythin';
+    font-family: 'ralewaybold';
     font-weight: bold;    
     font-size: 1em;
     padding:15px;
@@ -348,6 +348,7 @@ aside {
     border-radius :10px;
     padding-left:30px;
     justify-content: space-between;
+    padding-top:2.1%;
 }
 
 .vignetteAside {
@@ -512,8 +513,21 @@ footer ul {
     }
     aside {
         justify-content: space-between;
-        padding-bottom:50px;
+        padding-bottom:55px;
+        padding-left:20px;
+    }
+    .vignetteAside {
+        margin-right:20px;
     }   
+
+    .descriptionside {
+        width:55%;
+        left:125px;
+    }
+
+    #main {
+        flex:2.5;
+    }
 }
 
 @media all and (max-width: 1024px) {
