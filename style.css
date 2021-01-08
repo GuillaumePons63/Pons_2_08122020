@@ -125,7 +125,7 @@ header a:hover{
     text-align: right;
     margin: 30px;
     position: relative;
-    top: 30px;
+    top: 20px;
 }
 
 /* section search */
@@ -599,6 +599,10 @@ footer ul {
 
     aside {
         margin-bottom:0;
+    }
+
+    .chart::before {
+        margin:20px;
     }
 
     .vignetteAside {
