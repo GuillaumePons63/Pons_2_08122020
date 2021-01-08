@@ -152,7 +152,6 @@ header a:hover{
 
 #searchBar {
     display:inline-table;
-    margin:none;
 }
 
 
@@ -283,7 +282,6 @@ main {
 .description {
     position:relative;
     line-height:0;
-    padding:auto;
 }
 
 .shadow{
@@ -638,7 +636,6 @@ footer ul {
         
     .inline{
         display: block;
-        margin-block-start: 0em;
     }
 
     .checkbox {
