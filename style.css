@@ -6,13 +6,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'ralewaythin';
-    src: url('font/RalewayBold/raleway-bold-webfont.woff2') format('woff2'),
-         url('font/RalewayBold/raleway-bold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
 
 @font-face {
   font-family: 'Font Awesome 5 Free';
@@ -26,7 +19,7 @@
        url('font/fontAwesome/fa-solid-900.svg#fontawesome') format("svg"); }
 
 body{
-    font-family:ralewaythin,serif;
+    font-family:ralewaythin;
     padding:0;
     margin:0;
 }
@@ -328,7 +321,6 @@ aside {
     background-color:#f2f2f2;
     border-radius :10px;
     padding-left:30px;
-    padding-top:2.1%;
     justify-content: space-between;
 }
 
@@ -492,10 +484,6 @@ footer ul {
    .vignette {
        width:40%;
    }
-
-   aside {
-       padding-bottom: 5%;
-   }
 }
 
 @media all and (max-width: 1024px) {
@@ -554,35 +542,10 @@ footer ul {
         margin-bottom:30px;
     }
 
-    .iconeInfo::before {
-        padding: 4px 8px 4px 8px;
-    }
-
-    .chart::before {
-        top:20px;
-    }
-
-    aside {
-        margin-bottom: 23px;
-        width:107%; 
-        position : relative;
-        left:-7%;
-        border-radius: 0 0 0 0;
-        padding-top:20px;
-        padding-bottom:30px;   
-    }
-
-    .vignetteAside {
-        margin-bottom:10px;
-    }
-
     main {
         flex-direction: column-reverse;
     }
 
-    .description {
-        padding-left:10px;
-    }
     .imageBot {
         height:130px;
     }
@@ -601,12 +564,21 @@ footer ul {
         margin-bottom: 23px;
     }
 
-       
+    
+    aside {
+        margin-bottom: 23px;
+        width:103.5%; 
+        position : relative;
+        left:-3.5%;
+        border-radius: 0 0 0 0;   
+    }
+
+
+
     #main {
         background-color: #ffffff;
         padding:0;
         margin: 0;
-        margin-bottom:30px;
     }
 
     .vignette{
