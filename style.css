@@ -559,6 +559,10 @@ footer ul {
         text-align: center;
     } 
 
+    header {
+        height:150px;
+    }
+
     header a:hover{
         color:#0065FC;
         border-top:none;
@@ -593,12 +597,21 @@ footer ul {
         flex-direction: column-reverse;
     }
 
+    aside {
+        margin-bottom:0;
+    }
+
+    .vignetteAside {
+        margin-bottom:10px;
+    }
+
     .imageBot {
         height:130px;
     }
 
     article {
         flex-direction: column;
+        margin-top:0;
     }
 
     .activite {
