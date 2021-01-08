@@ -6,13 +6,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'ralewaythin';
-    src: url('font/RalewayBold/raleway-bold-webfont.woff2') format('woff2'),
-         url('font/RalewayBold/raleway-bold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
 
 @font-face {
   font-family: 'Font Awesome 5 Free';
@@ -26,7 +19,7 @@
        url('font/fontAwesome/fa-solid-900.svg#fontawesome') format("svg"); }
 
 body{
-    font-family:ralewaythin,serif;
+    font-family:ralewaythin;
     padding:0;
     margin:0;
 }
