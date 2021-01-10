@@ -101,6 +101,11 @@ header a:hover{
     padding-bottom: 45px; 
 }
 
+.inline {
+    display: inline-block;
+    margin-right: 15px;
+}
+
 /* Pour les icônes */
 
 .iconeInfo::before {
@@ -169,6 +174,10 @@ header a:hover{
     border-top-color: #f1f1f1;
     border-left:none;
     border-right:none;
+}
+
+.bouton2 {
+    display:none;
 }
 
 .search {
@@ -341,6 +350,12 @@ main {
         background-position: center;
     }
 
+#titrelogo {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
 aside {
     display:flex;
     flex:1.5;
@@ -406,7 +421,7 @@ article {
     margin-top:50px;
 }
 
-.activite {
+#activite {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -479,12 +494,6 @@ article {
     padding-top: 10px;
 }
 
-#titrelogo {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 footer {
     display:flex;
     justify-content: space-between;
@@ -502,14 +511,7 @@ footer ul {
     line-height: 30px;
 }
 
-.inline {
-    display: inline-block;
-    margin-right: 15px;
-}
 
-.bouton2 {
-    display:none;
-}
 
 @media all and (max-width: 1280px) {
    .vignette {
@@ -586,74 +588,11 @@ footer ul {
 
     .champ {
         width:90%;
-        
     }
 
     .icone {
         display:flex;
         margin-bottom:30px;
-    }
-
-    main {
-        flex-direction: column-reverse;
-    }
-
-    aside {
-        margin-bottom:0;
-    }
-
-    .chart::before {
-        margin:20px;
-    }
-
-    .vignetteAside {
-        margin-bottom:10px;
-    }
-
-    .imageBot {
-        height:130px;
-    }
-
-    article {
-        flex-direction: column;
-        margin-top:0;
-    }
-
-    .activite {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .vignettebot {
-        width: 100%;
-        margin-bottom: 23px;
-    }
-
-    
-    aside {
-        margin-bottom: 23px;
-        width:103.5%; 
-        position : relative;
-        left:-3.5%;
-        border-radius: 0 0 0 0; 
-    }
-
-
-
-    #main {
-        background-color: #ffffff;
-        padding:0;
-        margin: 0;
-    }
-
-    .vignette{
-        width:100%;
-        margin-right: 0;
-
-    }
-        
-    .inline{
-        display: block;
     }
 
     .checkbox {
@@ -663,12 +602,14 @@ footer ul {
         margin-left:0;
     }
 
+    .inline{
+        display: block;
+    }
+    
     .bouton {
         display: none;        
     }
     
-    
-
     .bouton2{
         display:inline-block;
         background: #0065FC;
@@ -689,8 +630,58 @@ footer ul {
         right:3.5%;
     }
     
+    main {
+        flex-direction: column-reverse;
+    }
+
+        .chart::before {
+        margin:20px;
+    }
+
+    #main {
+        background-color: #ffffff;
+        padding:0;
+        margin: 0;
+    }
+
+    .vignette{
+        width:100%;
+        margin-right: 0;
+
+    }
+        
+    aside {
+        margin-bottom: 23px;
+        width:103.5%; 
+        position : relative;
+        left:-3.5%;
+        border-radius: 0 0 0 0; 
+    }
+
+    .vignetteAside {
+        margin-bottom:10px;
+    }
 
     
+    article {
+        flex-direction: column;
+        margin-top:0;
+    }
+
+    #activite {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .vignettebot {
+        width: 100%;
+        margin-bottom: 23px;
+    }
+
+    .imageBot {
+        height:130px;
+    }
+
     footer {
         flex-direction: column;
     }
